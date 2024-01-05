@@ -5,11 +5,14 @@ for i in range(mult):
 	end = str(input('File ending? '))
 	# Check if a '.' was added to the beginning of the file extension type input
 	if not end.startswith('.'): end = '.' + end
+	# Finish the naming of the file
 	fName += end
+# remove!! fjeroawqeioukjweqi9rueikjfo3i9r8guijkfl	9i4uitjkli9rfeuijkli	329rfeuijkfelo	e2i9rofjefjvhui bgj n3jiuhfrygevbn
 	try: open(fName, 'x')
 	except: None
-	
-	typ = str(input('What is youre project? (EX: game, tool, etc.)? '))
+
+	# Get inputs
+	typ = str(input('What is youre project (EX: game, tool, etc.)? '))
 	name = str(input(f"What is the {typ}'s name? "))
 	members = str(input(f"Who developed the {typ} {name} (Digital or real names, not 'me')? "))
 	download = str(input(f'What is the link to download the {typ} {name}? '))
@@ -20,7 +23,7 @@ for i in range(mult):
 	"To get {name}: {download}"
 	"For {name} source code: {code}"
 	''')
-	
+	# Create and write to file
 	with open(fName, 'w') as d:
 		d.write(f'''Bspace Liscence
 	{ver}

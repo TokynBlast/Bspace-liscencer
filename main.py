@@ -49,4 +49,4 @@ for i in range(mult):
 	Rules
 	[rules]''')
 	
-	print('It is done!\nYou will have to enter the rules manually, as this featur is not in v0.2')
+	print('It is done!\nYou will have to enter the rules manually, as this feature is not in v0.2')
